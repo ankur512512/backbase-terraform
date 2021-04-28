@@ -51,8 +51,8 @@ Steps:
 	
   Wait till terraforom creates all the resources and until you see a message like this:
   
-  Apply complete! Resources: 3 added, 1 changed, 1 destroyed.
-  
+  Apply complete! Resources: 10 added, 0 changed, 0 destroyed.  
+
 6. Testing: Check the AWS console to see all the resources created as execpted. 
 
   Navigate to EC2 instances for region "us-east-1" and you will find a EC2 instance with name "centos" running there.
