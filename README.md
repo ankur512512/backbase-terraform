@@ -19,15 +19,15 @@ Steps:
 
 1. Download the source code in your working directory using below command:
 
-	git clone url
+		git clone url
 	
 2. cd into that project with below command:
 
-	cd backbase-terraform
+		cd backbase-terraform
 	
 3. Copy the public and private key from your home directory to current working directory where the code exists. (modify the source path if you need)
 
-	cp ~/.ssh/id_rsa* .
+		cp ~/.ssh/id_rsa* .
 	
    You will see the id_rsa and id_rsa.pub file copied into the working directory.
    
@@ -42,10 +42,10 @@ Steps:
 	
 5. Run the terraform commands.
 
-	terraform fmt
-	terraform init
-	terraform plan
-	terraform apply
+		terraform fmt
+		terraform init
+		terraform plan
+		terraform apply
 	
   Wait till terraforom creates all the resources and until you see a message like this:
   
@@ -58,9 +58,9 @@ Steps:
 
   ssh to the instance using below command:
   
-	ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
+		ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
 
   Now you can run curl command to see the connectivity with google:
-	curl -L http://google.com
+		curl -L http://google.com
 	
   (We have used -L option to follow the automatic redirects otherwise we get 301 Moved status)	
