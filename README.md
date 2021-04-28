@@ -23,7 +23,7 @@ Steps:
 	
 2. cd into that project with below command:
 
-    cd backbase-terraform
+        cd backbase-terraform
 	
 3. Copy the public and private key from your home directory to current working directory where the code exists. (modify the source path if you need)
 
@@ -31,9 +31,9 @@ Steps:
 	
    You will see the id_rsa and id_rsa.pub file copied into the working directory.
    
-4. Modify the main.tf file to provide AWS credentials. Replace my-access-key and my-secret-key with your own AWS account's access key and secret key and save it.
+4. Modify the providers.tf file to provide AWS credentials. Replace my-access-key and my-secret-key with your own AWS account's access key and secret key and save it.
 
-	provider "aws" {
+    provider "aws" {
       profile    = "default"
       region     = "us-east-1"
       access_key = "my-access-key"
