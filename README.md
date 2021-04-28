@@ -17,13 +17,13 @@ Prerequites:
 
 Steps: 
 
-1. Download the source code in your working directory using below command.
+1. Download the source code in your working directory using below command:
 
 	git clone url
 	
-2. cd into that project with below command
+2. cd into that project with below command:
 
-        cd backbase-terraform
+	cd backbase-terraform
 	
 3. Copy the public and private key from your home directory to current working directory where the code exists. (modify the source path if you need)
 
@@ -58,9 +58,9 @@ Steps:
 
   ssh to the instance using below command:
   
-    ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
+	ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
 
   Now you can run curl command to see the connectivity with google:
-    curl -L http://google.com
+	curl -L http://google.com
 	
   (We have used -L option to follow the automatic redirects otherwise we get 301 Moved status)	
