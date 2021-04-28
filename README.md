@@ -46,6 +46,8 @@ Steps:
 		terraform init
 		terraform plan
 		terraform apply
+		
+		(Enter yes when prompted to approve in last step)
 	
   Wait till terraforom creates all the resources and until you see a message like this:
   
