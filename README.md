@@ -49,20 +49,27 @@ Steps:
 		
 		(Enter yes when prompted to approve in last step)
 	
-  Wait till terraforom creates all the resources and until you see a message like this:
+    Wait till terraforom creates all the resources and until you see a message like this:
   
-  Apply complete! Resources: 10 added, 0 changed, 0 destroyed.  
+    Apply complete! Resources: 10 added, 0 changed, 0 destroyed.  
+  
+  
 
 6. Testing: Check the AWS console to see all the resources created as execpted. 
 
   Navigate to EC2 instances for region "us-east-1" and you will find a EC2 instance with name "centos" running there.
   Get the public ip from "Public IPv4 address" field for this instance.
+  
+  ![image](https://user-images.githubusercontent.com/12583640/116373339-daed2700-a82a-11eb-838e-0f78ce2ccc44.png)
+
 
   ssh to the instance using below command:
   
-	ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
+	ssh -o StrictHostKeyChecking=no -i id_rsa centos@<public-ip of your instance>
 
   Now you can run curl command to see the connectivity with google:
 		curl -L http://google.com
 	
   (We have used -L option to follow the automatic redirects otherwise we get 301 Moved status)	
+  
+  You should be able to see the results with lots of html data from google.
