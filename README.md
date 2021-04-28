@@ -19,7 +19,7 @@ Steps:
 
 1. Download the source code in your working directory using below command:
 
-		git clone url
+		git clone https://github.com/ankur512512/backbase-terraform.git
 	
 2. cd into that project with below command:
 
