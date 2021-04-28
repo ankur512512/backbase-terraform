@@ -58,7 +58,7 @@ Steps:
 
   ssh to the instance using below command:
   
-		ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
+	ssh -o StrictHostKeyChecking=no centos@<public-ip of your instance>
 
   Now you can run curl command to see the connectivity with google:
 		curl -L http://google.com
