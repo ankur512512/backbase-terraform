@@ -21,7 +21,7 @@ Steps:
 
 	git clone url
 	
-2. cd into that project with below command:
+2. cd into that project with below command
 
         cd backbase-terraform
 	
