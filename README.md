@@ -33,12 +33,12 @@ Steps:
    
 4. Modify the providers.tf file to provide AWS credentials. Replace my-access-key and my-secret-key with your own AWS account's access key and secret key and save it.
 
-    provider "aws" {
-      profile    = "default"
-      region     = "us-east-1"
-      access_key = "my-access-key"
-      secret_key = "my-secret-key"
-    }
+    	provider "aws" {
+      	  profile    = "default"
+      	  region     = "us-east-1"
+      	  access_key = "my-access-key"
+      	  secret_key = "my-secret-key"
+    	}
 	
 5. Run the terraform commands.
 
